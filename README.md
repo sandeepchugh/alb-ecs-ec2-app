@@ -28,6 +28,14 @@ Install terraform in your local machine or build server using terraform cli http
 Terraform uses the aws provider to interact with aws services. More details on the aws provider are available at https://www.terraform.io/docs/providers/aws/index.html
 
 #### IAC (Terraform)
+Terraform S3 State Setup - with locking via DynamoDB
+https://www.terraform.io/docs/backends/types/s3.html
+
+- Create S3 bucket ``sc-terraform-state-dev``
+- Create dynamodb table ``sc-terraform-state-dev`` 
+  The table must have a primary key named LockID with type of string.
+ 
+> NOTE: State configuration should be done once per account or environment
 
 DEVELOPMENT
 ```shell script

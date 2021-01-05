@@ -1,5 +1,4 @@
 resource "aws_nat_gateway" "nat_gateway_2a" {
-  vpc_id = aws_vpc.application_vpc.id
   allocation_id = aws_eip.eip_2a.id
   subnet_id = aws_subnet.private_web_2a.id
 
@@ -10,7 +9,6 @@ resource "aws_nat_gateway" "nat_gateway_2a" {
 }
 
 resource "aws_nat_gateway" "nat_gateway_2b" {
-  vpc_id = aws_vpc.application_vpc.id
   allocation_id = aws_eip.eip_2a.id
   subnet_id = aws_subnet.private_web_2a.id
 

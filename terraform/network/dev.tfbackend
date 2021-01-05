@@ -1,0 +1,5 @@
+bucket          = "sc-terraform-state-dev"
+dynamodb_table  = "sc-terraform-state-dev"
+key             = "app-network"
+region          = "us-east-1"
+encrypt         = "true"

@@ -31,7 +31,7 @@ resource "aws_route_table" "subnet_pvt_2a_route_table" {
   vpc_id = aws_vpc.application_vpc.id
 
   route {
-    cidr_block = aws_subnet.private_web_2a
+    cidr_block = "0.0.0.0/0"
     gateway_id = aws_nat_gateway.nat_gateway_2a.id
   }
 
@@ -44,7 +44,7 @@ resource "aws_route_table" "subnet_pvt_2b_route_table" {
   vpc_id = aws_vpc.application_vpc.id
 
   route {
-    cidr_block = aws_subnet.private_web_2b
+    cidr_block = "0.0.0.0/0"
     gateway_id = aws_nat_gateway.nat_gateway_2b.id
   }
 
