@@ -1,2 +1,2 @@
-# alb-ecs-fargate-app
-api deployed in docker ecs fargate with application load balancer using terraform
+# Python flask api
+api deployed in docker ecs ec2 cluster with application load balancer using terraform
